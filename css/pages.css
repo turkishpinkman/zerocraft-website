@@ -599,6 +599,10 @@
   color: var(--accent);
 }
 
+.price-display {
+  transition: opacity 0.15s ease, color 0.15s ease;
+}
+
 .software-feature-text h4 {
   font-size: var(--text-sm);
   font-weight: 600;
