@@ -758,7 +758,18 @@
 }
 
 .btn-instagram:hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
-  box-shadow: 0 8px 30px rgba(131, 58, 180, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(225, 48, 108, 0.4);
+}
+
+.btn-tiktok {
+  background: #000000;
+  color: #fff;
+  border: 1px solid #333;
+}
+.btn-tiktok:hover {
+  transform: translateY(-2px);
+  background: #111111;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+  border-color: #69C9D0;
 }
