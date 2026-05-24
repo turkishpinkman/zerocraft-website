@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZERØDECK — Makro Kontrol Cihazı | ZERØCRAFT</title>
+  <meta name="description" content="ZERØDECK — 12 programlanabilir tuş ve 4 analog potansiyometre ile masaüstü iş akışını kontrol et. ₺2.980">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:title" content="ZERØDECK — Makro Kontrol Cihazı">
+  <meta property="og:description" content="12 akıllı tuş, hassas kontrol halkaları, kusursuz entegrasyon. ₺2.980">
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://zerocraft.store/zerodeck">
+  <meta property="product:price:amount" content="2980">
+  <meta property="product:price:currency" content="TRY">
+  <link rel="icon" type="image/png" href="assets/logos/zerodeck-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" id="nav-logo">ZERØCRAFT</a>
+      <div class="nav-links" id="nav-links">
+        <a href="#ozellikler" class="nav-link">Özellikler</a>
+        <a href="#nasil-calisir" class="nav-link">Nasıl Çalışır</a>
+        <a href="#teknik" class="nav-link">Teknik</a>
+        <a href="#satin-al" class="nav-link">Satın Al</a>
+      </div>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Menüyü aç">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Overlay -->
+  <div class="nav-mobile-overlay" id="nav-mobile-overlay">
+    <a href="#ozellikler" class="nav-link" data-mobile-link>Özellikler</a>
+    <a href="#nasil-calisir" class="nav-link" data-mobile-link>Nasıl Çalışır</a>
+    <a href="#teknik" class="nav-link" data-mobile-link>Teknik</a>
+    <a href="#satin-al" class="nav-link" data-mobile-link>Satın Al</a>
+    <hr class="divider" style="width:60px; margin: 16px 0;">
+    <a href="index.html" class="nav-link" data-mobile-link>← Ana Sayfa</a>
+  </div>
+
+  <!-- ======== PRODUCT HERO ======== -->
+  <section class="product-hero" id="product-hero">
+    <div class="hero-grid"></div>
+    <div class="product-hero-glow"></div>
+
+    <div class="product-hero-content">
+      <img src="assets/logos/zerodeck-logo.png" alt="ZERØDECK" class="product-hero-logo hero-animate hero-animate-1" id="product-logo">
+      <h1 class="product-hero-tagline">
+        <span class="hero-animate hero-animate-2">Kontrolü</span>
+        <span class="hero-animate hero-animate-3">Ele Al.</span>
+      </h1>
+
+      <div class="product-hero-visual hero-animate hero-animate-4">
+        <div class="showcase-product-glow"></div>
+        <img src="assets/products/zerodeck-hero.png" alt="ZERØDECK Makro Kontrol Cihazı" class="product-hero-img" id="product-hero-img">
+      </div>
+
+      <div class="product-hero-price-block hero-animate hero-animate-5">
+        <span class="product-hero-price">₺2.980</span>
+        <a href="#satin-al" class="btn btn-primary btn-lg" id="hero-buy-btn">Satın Al</a>
+        <a href="#ozellikler" class="btn btn-secondary btn-lg" id="hero-details-btn">Detaylar ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FEATURES ======== -->
+  <section class="features section" id="ozellikler">
+    <div class="container text-center">
+      <span class="section-badge reveal">ÖZELLİKLER</span>
+      <h2 class="section-title reveal delay-1">Her Detay Kusursuz.</h2>
+      <p class="section-desc centered reveal delay-2">İş akışınızı hızlandırmak için donanım ve yazılımın mükemmel uyumu.</p>
+    </div>
+
+    <div class="container">
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="card reveal delay-1" id="feature-keys">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7" rx="1.5"/>
+              <rect x="14" y="3" width="7" height="7" rx="1.5"/>
+              <rect x="3" y="14" width="7" height="7" rx="1.5"/>
+              <rect x="14" y="14" width="7" height="7" rx="1.5"/>
+            </svg>
+          </div>
+          <h3 class="card-title">12 Akıllı Tuş</h3>
+          <p class="card-desc">Her birine klavye kısayolu, makro dizisi veya uygulama başlatma atayın.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="card reveal delay-2" id="feature-pots">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 2a10 10 0 0 1 0 20"/>
+              <circle cx="12" cy="12" r="2"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Hassas Kontrol Halkaları</h3>
+          <p class="card-desc">Ses seviyesi, ekran parlaklığı veya ince fırça ayarları için pürüzsüz dönen 4 analog kontrolcü.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="card reveal delay-3" id="feature-usb">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v10"/>
+              <path d="M18.5 8a2.5 2.5 0 1 0 0 5"/>
+              <path d="M5.5 8a2.5 2.5 0 1 1 0 5"/>
+              <circle cx="12" cy="18" r="3"/>
+              <line x1="12" y1="15" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Sürücüsüz Bağlantı</h3>
+          <p class="card-desc">Tak ve kullanmaya başla. Karmaşık kurulumlar yok, sadece anında Type-C bağlantısı.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="card reveal delay-1" id="feature-profiles">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Otomatik Uygulama Geçişi</h3>
+          <p class="card-desc">Photoshop, Premiere, VS Code... Hangi uygulamadaysanız ZERØDECK sizi takip eder.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="card reveal delay-2" id="feature-dragdrop">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Kusursuz Arayüz</h3>
+          <p class="card-desc">Aksiyon kütüphanesinden sürükle ve tuşa bırak. İhtiyacınız olan makroyu saniyeler içinde oluşturun.</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="card reveal delay-3" id="feature-opensource">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1DB954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M8 11.5c3.5-1.5 8-1.5 10 .5"></path>
+              <path d="M7 14.5c3-1 7-1 9 .5"></path>
+              <path d="M6 17.5c2.5-1 6-1 8 .5"></path>
+            </svg>
+          </div>
+          <h3 class="card-title">Spotify Entegrasyonu</h3>
+          <p class="card-desc">Dahili ekranda çalan şarkıyı görün, tek tuşla müziği kontrol edin. Ritmi asla kaçırmayın.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== HOW IT WORKS ======== -->
+  <section class="how-it-works section" id="nasil-calisir">
+    <div class="container text-center">
+      <span class="section-badge reveal">NASIL ÇALIŞIR</span>
+      <h2 class="section-title reveal delay-1">Üç Adımda Hazır.</h2>
+      <p class="section-desc centered reveal delay-2">Kurulum dakikalar içinde tamamlanır.</p>
+    </div>
+
+    <div class="container">
+      <div class="steps">
+        <!-- Step 1 -->
+        <div class="step reveal delay-1" id="step-connect">
+          <div class="step-number">01</div>
+          <div class="step-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v10"/>
+              <circle cx="12" cy="18" r="3"/>
+              <line x1="12" y1="15" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <h3 class="step-title">Bağla</h3>
+          <p class="step-desc">Type-C kabloyu tak. Cihaz otomatik olarak tanınır, sürücü kurmanıza gerek yok.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step reveal delay-2" id="step-configure">
+          <div class="step-number">02</div>
+          <div class="step-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <h3 class="step-title">Yapılandır</h3>
+          <p class="step-desc">Masaüstü uygulamasını aç, aksiyon kütüphanesinden sürükle-bırak ile tuşlarını ata.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step reveal delay-3" id="step-control">
+          <div class="step-number">03</div>
+          <div class="step-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+          </div>
+          <h3 class="step-title">Kontrol Et</h3>
+          <p class="step-desc">Tek tuşla makrolarını çalıştır, potlarla hassas ayarlar yap. O kadar basit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SOFTWARE ======== -->
+  <section class="software-section section" id="yazilim">
+    <div class="container">
+      <div class="software-inner">
+        <div class="software-visual reveal-left" style="background: transparent; border: none; overflow: hidden; border-radius: var(--radius-xl); filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));">
+          <video src="assets/products/gecis.mp4" autoplay loop muted playsinline class="software-screenshot" style="width: 100%; height: auto; border-radius: var(--radius-xl);"></video>
+        </div>
+
+        <div class="reveal-right">
+          <span class="section-badge">YAZILIM</span>
+          <h2 class="section-title">Gücünü Yazılımdan Alır.</h2>
+          <p class="section-desc">ZERØDECK ile birlikte gelen profesyonel yapılandırma yazılımı.</p>
+          
+          <div style="margin: var(--space-6) 0;">
+            <a href="https://github.com/turkishpinkman/zerodeck/releases/latest" id="dynamic-download-btn" class="btn btn-secondary" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Windows Uygulamasını İndir (vX.X.X)
+            </a>
+            <p id="download-fallback-text" style="font-size: 12px; color: var(--text-muted); margin-top: 8px; display: none;">GitHub üzerinden en güncel sürümü indirin.</p>
+          </div>
+
+          <div class="software-features-list">
+            <div class="software-feature">
+              <div class="software-feature-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <div class="software-feature-text">
+                <h4>Uygulama Bazlı Profiller</h4>
+                <p>Aktif pencereye göre otomatik profil geçişi.</p>
+              </div>
+            </div>
+
+            <div class="software-feature">
+              <div class="software-feature-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                </svg>
+              </div>
+              <div class="software-feature-text">
+                <h4>Sürükle-Bırak Makro Atama</h4>
+                <p>Aksiyon kütüphanesinden tuşlara kolayca atama yap.</p>
+              </div>
+            </div>
+
+            <div class="software-feature">
+              <div class="software-feature-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 2v6h-6"/>
+                  <path d="M3 12a9 9 0 0 1 15-6.7L21 8"/>
+                  <path d="M3 22v-6h6"/>
+                  <path d="M21 12a9 9 0 0 1-15 6.7L3 16"/>
+                </svg>
+              </div>
+              <div class="software-feature-text">
+                <h4>Gerçek Zamanlı Bağlantı</h4>
+                <p>Değişiklikleri anında cihaza gönder, canlı durum takibi.</p>
+              </div>
+            </div>
+
+            <div class="software-feature">
+              <div class="software-feature-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+              </div>
+              <div class="software-feature-text">
+                <h4>Otomatik Güncelleme</h4>
+                <p>GitHub üzerinden tek tıkla yazılım güncellemesi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SPECS ======== -->
+  <section class="specs-section section" id="teknik">
+    <div class="container">
+      <div class="specs-inner">
+        <div class="text-center">
+          <span class="section-badge reveal">TEKNİK ÖZELLİKLER</span>
+          <h2 class="section-title reveal delay-1">Detaylar.</h2>
+        </div>
+
+        <div class="specs-table-wrapper reveal delay-2">
+          <table class="spec-table" id="spec-table">
+            <tbody>
+              <tr>
+                <td>Tuş Sayısı</td>
+                <td>12 Akıllı Tuş (Dinamik Arayüzlü)</td>
+              </tr>
+              <tr>
+                <td>Analog Kontrol</td>
+                <td>4 Adet Pürüzsüz Döner Halka</td>
+              </tr>
+              <tr>
+                <td>Bağlantı Türü</td>
+                <td>Type-C (Sürücüsüz, Tak-Çalıştır)</td>
+              </tr>
+              <tr>
+                <td>Ekran</td>
+                <td>Entegre Renkli Bilgi Ekranı</td>
+              </tr>
+              <tr>
+                <td>İşletim Sistemi</td>
+                <td>Windows Uyumlu Uygulama</td>
+              </tr>
+              <tr>
+                <td>Akıllı Özellikler</td>
+                <td>Uygulamalar arası otomatik geçiş, canlı Spotify takibi, anında eşzamanlama</td>
+              </tr>
+              <tr>
+                <td>Güncelleme</td>
+                <td>Tek Tıkla Bulut Üzerinden</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CTA — SATIN AL ======== -->
+  <section class="cta-section section" id="satin-al">
+    <div class="cta-glow"></div>
+    <div class="container">
+      <div class="cta-content">
+        <span class="section-badge reveal">SATIN AL</span>
+        <h2 class="section-title reveal delay-1">ZERØDECK'i Edin.</h2>
+        <div class="cta-price reveal delay-2">₺2.980</div>
+        <p class="cta-note reveal delay-2">KDV Dahil · Kargo Dahil</p>
+
+        <div class="cta-buttons reveal delay-3">
+          <a href="#" class="btn btn-primary btn-lg" id="btn-shopier" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="21" r="1"/>
+              <circle cx="20" cy="21" r="1"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+            </svg>
+            Shopier ile Satın Al
+          </a>
+
+          <a href="https://instagram.com/zerocraft" class="btn btn-instagram btn-lg" id="btn-instagram-dm" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="5"/>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+            </svg>
+            Instagram DM ile Sipariş
+          </a>
+        </div>
+
+        <div class="cta-divider reveal delay-4">
+          <span>veya</span>
+        </div>
+
+        <!-- Waitlist -->
+        <div class="waitlist reveal delay-5" id="waitlist-section">
+          <h3 class="waitlist-title">Stok bildirimi al</h3>
+          <form class="waitlist-form" id="waitlist-form">
+            <input type="email" class="input" id="waitlist-email" placeholder="E-posta adresiniz" required autocomplete="email">
+            <button type="submit" class="btn btn-secondary" id="waitlist-submit">Beni Haberdar Et</button>
+          </form>
+          <div class="waitlist-success" id="waitlist-success">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+            Kaydınız alındı! Stok geldiğinde sizi bilgilendireceğiz.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="footer-brand">ZERØCRAFT</a>
+          <p class="footer-tagline">Dijital kontrol araçları ve yazılım çözümleri.</p>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-nav-group">
+            <h4>Ürün</h4>
+            <a href="#ozellikler">Özellikler</a>
+            <a href="#nasil-calisir">Nasıl Çalışır</a>
+            <a href="#teknik">Teknik Özellikler</a>
+          </div>
+          <div class="footer-nav-group">
+            <h4>Satın Al</h4>
+            <a href="#satin-al">Fiyat & Sipariş</a>
+            <a href="https://github.com/turkishpinkman/zerodeck" target="_blank" rel="noopener">Açık Kaynak Kodları</a>
+          </div>
+          <div class="footer-nav-group">
+            <h4>ZERØCRAFT</h4>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="mailto:info@zerocraft.store">İletişim</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 ZERØCRAFT. Tüm hakları saklıdır.</p>
+        <div class="footer-socials">
+          <a href="https://instagram.com/zerocraft" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="5"/>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="https://github.com/turkishpinkman/zerodeck" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/waitlist.js"></script>
+  <script src="js/github-releases.js"></script>
+</body>
+</html>

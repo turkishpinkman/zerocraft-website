@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZERØCRAFT — Dijital Kontrol Araçları</title>
+  <meta name="description" content="ZERØCRAFT — Donanım ve yazılım çözümleriyle dijital kontrolü yeniden tanımlıyoruz. ZERØDECK makro kontrol cihazı ile iş akışını hızlandır.">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:title" content="ZERØCRAFT — Dijital Kontrol Araçları">
+  <meta property="og:description" content="Donanım ve yazılım çözümleriyle dijital kontrolü yeniden tanımlıyoruz.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zerocraft.store">
+  <link rel="icon" type="image/png" href="assets/logos/zerodeck-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" id="nav-logo">ZERØCRAFT</a>
+      <div class="nav-links" id="nav-links">
+        <a href="#urunler" class="nav-link">Ürünler</a>
+        <a href="#hakkimizda" class="nav-link">Hakkımızda</a>
+        <a href="#iletisim" class="nav-link">İletişim</a>
+      </div>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Menüyü aç">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Overlay -->
+  <div class="nav-mobile-overlay" id="nav-mobile-overlay">
+    <a href="#urunler" class="nav-link" data-mobile-link>Ürünler</a>
+    <a href="#hakkimizda" class="nav-link" data-mobile-link>Hakkımızda</a>
+    <a href="#iletisim" class="nav-link" data-mobile-link>İletişim</a>
+  </div>
+
+  <!-- ======== HERO ======== -->
+  <section class="hero" id="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+
+    <div class="hero-content">
+      <p class="hero-brand hero-animate hero-animate-1">ZERØCRAFT</p>
+      <h1 class="hero-heading">
+        <span class="hero-animate hero-animate-2">Yarat.</span>
+        <span class="hero-animate hero-animate-3">Kontrol Et.</span>
+      </h1>
+      <p class="hero-sub hero-animate hero-animate-4">
+        Donanım ve yazılımın kusursuz uyumuyla sınırlarını zorla. Profesyonel iş akışları için tasarlandı.
+      </p>
+      <div class="hero-cta-group hero-animate hero-animate-5">
+        <a href="#urunler" class="btn btn-primary btn-lg" id="hero-cta">Ürünleri Keşfet</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span>KEŞFET</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 5v14"/>
+        <path d="M19 12l-7 7-7-7"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ======== PRODUCT SHOWCASE: ZERØDECK ======== -->
+  <section class="showcase" id="urunler">
+    <div class="showcase-inner">
+      <div class="showcase-content">
+        <img src="assets/logos/zerodeck-logo.png" alt="ZERØDECK" class="showcase-logo reveal" id="showcase-zerodeck-logo">
+        <h2 class="showcase-hook reveal delay-1">12 Akıllı Tuş.<br>Sınırsız İhtimal.</h2>
+        <p class="showcase-desc reveal delay-2">
+          Masaüstü deneyimini yeniden tanımla. Aktif uygulamaya göre değişen profiller, kusursuz Spotify entegrasyonu ve anında tepki veren hassas kontroller.
+        </p>
+        <div class="showcase-price reveal delay-3">
+          <span class="currency">₺</span>2.980
+        </div>
+        <div class="showcase-actions reveal delay-4">
+          <a href="zerodeck.html" class="btn btn-primary" id="btn-zerodeck-explore">Keşfet</a>
+          <a href="zerodeck.html#satin-al" class="btn btn-secondary" id="btn-zerodeck-buy">Satın Al →</a>
+        </div>
+      </div>
+      <div class="showcase-visual">
+        <div class="showcase-product-glow"></div>
+        <img src="assets/products/zerodeck-hero.png" alt="ZERØDECK Makro Kontrol Cihazı" class="showcase-product-img reveal-scale delay-2" id="zerodeck-product-visual">
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== COMING SOON ======== -->
+  <section class="coming-soon-section" id="coming-soon">
+    <div class="container text-center">
+      <span class="section-badge reveal">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        YENİ ÜRÜNLER
+      </span>
+      <h2 class="section-title reveal delay-1">Yakında</h2>
+      <p class="section-desc centered reveal delay-2">Yeni projeler üzerinde çalışıyoruz. Takipte kal.</p>
+
+      <div class="coming-soon-grid">
+        <div class="coming-soon-card reveal delay-3 hover-lift">
+          <div class="coming-soon-icon">?</div>
+          <span class="coming-soon-label">Yeni ürün geliyor...</span>
+        </div>
+        <div class="coming-soon-card reveal delay-4 hover-lift">
+          <div class="coming-soon-icon">?</div>
+          <span class="coming-soon-label">Yeni ürün geliyor...</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== MANIFESTO / HAKKIMIZDA ======== -->
+  <section class="manifesto" id="hakkimizda">
+    <div class="container">
+      <p class="manifesto-text reveal">
+        <span class="highlight">Sıfırdan</span> tasarlandı.<br>
+        Her detayında kusursuzluk var.
+      </p>
+      <p class="manifesto-sub reveal delay-1">
+        ZERØCRAFT, donanım ve yazılımı bir bütün olarak ele alır. 
+        Amacımız, dijital dünyadaki etkileşiminizi sezgisel, akıcı ve büyüleyici bir hale getirmek.
+      </p>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer" id="iletisim">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">ZERØCRAFT</div>
+          <p class="footer-tagline">Dijital kontrol araçları ve yazılım çözümleri.</p>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-nav-group">
+            <h4>Ürünler</h4>
+            <a href="zerodeck.html">ZERØDECK</a>
+          </div>
+          <div class="footer-nav-group">
+            <h4>Şirket</h4>
+            <a href="#hakkimizda">Hakkımızda</a>
+          </div>
+          <div class="footer-nav-group">
+            <h4>İletişim</h4>
+            <a href="https://instagram.com/zerocraft" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://github.com/turkishpinkman/zerodeck" target="_blank" rel="noopener">Açık Kaynak Kodları</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 ZERØCRAFT. Tüm hakları saklıdır.</p>
+        <div class="footer-socials">
+          <a href="https://instagram.com/zerocraft" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="5"/>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="https://github.com/turkishpinkman/zerodeck" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
