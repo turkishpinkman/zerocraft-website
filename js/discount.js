@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   discountInput.addEventListener('input', (e) => {
     const val = e.target.value.trim().toLowerCase();
 
-    if (val === 'zero23') {
+    if (val === 'zero23' || val === 'tiktok20') {
       priceDisplays.forEach(el => {
         el.style.opacity = 0;
         setTimeout(() => {
