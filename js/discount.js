@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (!discountInput) return;
 
-  const originalPriceText = '₺2.980';
-  const discountedPriceText = '₺2.384';
+  const originalPriceText = '₺3.780';
+  const discountedPriceText = '₺3.024';
 
   discountInput.addEventListener('input', (e) => {
     const val = e.target.value.trim().toLowerCase();
