@@ -80,12 +80,12 @@
     <div class="showcase-inner">
       <div class="showcase-content">
         <img src="assets/logos/zerodeck-logo.png" alt="ZERØDECK" class="showcase-logo reveal" id="showcase-zerodeck-logo">
-        <h2 class="showcase-hook reveal delay-1">12 Akıllı Tuş.<br>Sınırsız İhtimal.</h2>
+        <h2 class="showcase-hook reveal delay-1">12 Akıllı Tuş.<br>Sınırsız Seçenek.</h2>
         <p class="showcase-desc reveal delay-2">
           Masaüstü deneyimini yeniden tanımla. Aktif uygulamaya göre değişen profiller, kusursuz Spotify entegrasyonu ve anında tepki veren hassas kontroller.
         </p>
         <div class="showcase-price reveal delay-3">
-          <span class="currency">₺</span>2.980
+          <span class="currency">₺</span>3.780
         </div>
         <div class="showcase-cta reveal delay-4">
           <a href="zerodeck.html#satin-al" class="btn btn-primary">Ön Sipariş Ver</a>
@@ -189,5 +189,33 @@
 
   <script src="js/main.js"></script>
   <script src="js/animations.js"></script>
+
+  <!-- Notification Popup -->
+  <div id="promo-notification" style="position: fixed; top: -150px; left: 50%; transform: translateX(-50%); background: rgba(20,20,20,0.85); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 16px 20px; display: flex; align-items: center; gap: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); z-index: 9999; transition: top 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); width: 90%; max-width: 400px; cursor: pointer;" onclick="window.location.href='zerodeck.html#satin-al'">
+    <img src="assets/logos/zerodeck-icon.png" alt="ZERODECK" style="width: 40px; height: 40px; border-radius: 10px;">
+    <div style="flex: 1;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+        <strong style="font-size: 14px; font-weight: 600; color: #fff;">ZERØDECK Ekibi</strong>
+        <span style="font-size: 12px; color: rgba(255,255,255,0.5);">Şimdi</span>
+      </div>
+      <p style="font-size: 13px; color: rgba(255,255,255,0.8); margin: 0; line-height: 1.4;">Ön siparişe özel fırsat! İndirim kodu bölümüne <strong style="color:#1DB954;">zero23</strong> yazarak %23 indirim kazanabilirsiniz. 🎁</p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        const notif = document.getElementById('promo-notification');
+        if(notif) {
+          notif.style.top = '20px';
+          // Tıklamada gizlemesi için
+          notif.addEventListener('click', () => { notif.style.top = '-150px'; });
+          setTimeout(() => {
+            notif.style.top = '-150px';
+          }, 6000); // 6 saniye sonra gizle
+        }
+      }, 1500); // 1.5 saniye sonra göster
+    });
+  </script>
 </body>
 </html>
